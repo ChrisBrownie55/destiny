@@ -15,8 +15,7 @@
     "structure"
   ],
   "scripts": {
-    "build": "npm-run-all clean check -p 'build:cjs -- {@}' --",
-    "build:cjs": "rollup -c",
+    "build": "rollup -c -o lib/destiny.js",
     "check": "tsc",
     "clean": "rimraf coverage lib",
     "format": "run-s format:*",
